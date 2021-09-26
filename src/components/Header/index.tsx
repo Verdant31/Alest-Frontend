@@ -33,7 +33,7 @@ export function Header() {
         <Text fontSize={["0px", "0px", "20px", "32px"]} mx="auto" my="auto" color="gray.100">CRUD DE PRODUTOS</Text>
         <Flex align="center" >
           <Box align="center" display={["", "", "flex", "flex"]} pr={["0", "15", "20", "20"]}>
-            <Flex ml="4">
+            <Flex mr="8">
               <Button variant="ghost" onClick={signOut}>
                 <Icon w={10} h={10}><FiLogOut color="white" /></Icon>
 
