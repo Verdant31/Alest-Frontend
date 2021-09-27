@@ -56,12 +56,6 @@ export function Card() {
         })
       }
     );
-  if (isLoading) {
-    return <Loading />;
-  }
-  if (isError) {
-    return <Error />;
-  }
 
   function handleDeleteProduct(idProduct: string) {
 
@@ -85,6 +79,23 @@ export function Card() {
 
   function handleOpenModal(idProduct: string) {
     history.push(`/EditProduct/${idProduct}`)
+  }
+
+  if (products === undefined) {
+    return (
+      <Box align="center">
+        <Button mx="auto" w={52} ml={["0", "", "12", "12"]} mt={["12", "12", "0", "0"]} bgColor="#3182CE" color="white" onClick={() => onOpen()} >Adicionar Produto</Button>
+        <Text maxW="80%" fontSize="40px" mt="10" fontWeight="bold" color="white">SEM PRODUTOS CADASTRADOS AINDA...</Text>
+        <ModalAddImage isOpen={isOpen} onClose={onClose} />
+        <Image w="80%" src="noproducts.png" />
+      </Box>
+    )
+  }
+  if (isLoading) {
+    return <Loading />;
+  }
+  if (isError) {
+    return <Error />;
   }
 
   return (

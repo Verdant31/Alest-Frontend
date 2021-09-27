@@ -19,7 +19,7 @@ export function AddProductForm({ isOpen, onClose }: AddProductFormProps) {
   const toast = useToast();
 
   async function handleSubmitProduct(event: FormEvent) {
-    console.log(productPrice);
+
     event.preventDefault();
     if (image == null || productName === '' || productPrice === '') {
       toast({
