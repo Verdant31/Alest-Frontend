@@ -81,13 +81,13 @@ export function Card() {
     history.push(`/EditProduct/${idProduct}`)
   }
 
-  if (products === undefined) {
+  if (products === undefined && isLoading === false) {
     return (
       <Box align="center">
         <Button mx="auto" w={52} ml={["0", "", "12", "12"]} mt={["12", "12", "0", "0"]} bgColor="#3182CE" color="white" onClick={() => onOpen()} >Adicionar Produto</Button>
         <Text maxW="80%" fontSize="40px" mt="10" fontWeight="bold" color="white">SEM PRODUTOS CADASTRADOS AINDA...</Text>
         <ModalAddImage isOpen={isOpen} onClose={onClose} />
-        <Image w="80%" src="noproducts.png" />
+        <Image w={["80%", "50%", "50%", "30%"]} src="noproducts.png" />
       </Box>
     )
   }
@@ -110,7 +110,7 @@ export function Card() {
         <ModalAddImage isOpen={isOpen} onClose={onClose} />
       </Box>
 
-      <Flex w="100%" mt="20" justify="center">
+      <Flex w="100%" mt="20" ml={["", "", "", "40"]} justify={["center", "center", "center", "flex-start"]}>
         <SimpleGrid minChildWidth="250px" templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} gap="20">
           {products?.filter((val) => {
             if (!searchProductName) return val;
