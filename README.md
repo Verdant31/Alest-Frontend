@@ -1,46 +1,94 @@
-# Getting Started with Create React App
+<div align="center">
+<h1>Alest Crud 💙</h1>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1> 📚 Project information</h1>
 
-## Available Scripts
+* This project was developed with the aim of passing a competency test for an internship position.
+* The proposed challenge was: Build a frontend interface that should show products to be sold. The data must be saved and picked up by the backend that accesses Google's NoSQL Firestore database.
+* The application must allow viewing, adding, updating and deleting products using the backend HTTP API.
+* The backend should be developed in Node.js or Typescript using the express framework.
 
-In the project directory, you can run:
+<br>
 
-### `yarn start`
+<h1> 📑 Project Deploy </h1>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* The project was deployed on Heroku, uploading two applications: one for the back-end and the other for the front-end.
+* Back-end: https://dashboard.heroku.com/apps/alest-backend 
+* Front-end: https://dashboard.heroku.com/apps/alest-frontend
+* Application: https://alest-frontend.herokuapp.com
+ 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<div align="center">
+  <h1>🧔 Page: Login (Initial)</h1>
+  <img src="https://user-images.githubusercontent.com/71015476/134837005-e2b1a3de-d10e-4f8a-b8d0-df4d65545613.png" />
+</div>
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div align="center">
+  <h1>🩰 Page: Products</h1>
+  <img src="https://user-images.githubusercontent.com/71015476/134837006-6de63fed-4d09-45cf-9a16-4e4c1e35d15d.png" />
+</div>
 
-### `yarn build`
+<div align="center">
+  <h1>✏️ Page: Edit Products</h1>
+  <img src="https://user-images.githubusercontent.com/71015476/134837003-41979747-a6db-40c1-85ba-3acca874e57a.png" />
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💻 About
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Design made with ChakraUI
+* Firebase integration
+* Utilização do React Query para busca de dados
+* Using React Query to search the data
+* Toastfy for success/error notifications
+* Data storage in Realtime Database
+* Authentication with Firebase Auth
+* Images storage in Firebase Storage
+* Adding products and creating users through modals
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Techs/Framweorks 
 
-### `yarn eject`
+* [ChakraUI](https://chakra-ui.com/docs/getting-started)
+* [ReactQuery](https://react-query.tanstack.com/)
+* [Toastfy](https://fkhadra.github.io/react-toastify/introduction)
+* [Firebase](https://console.firebase.google.com/)
+* [NodeJS](https://nodejs.org/en/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ⚙️ Installation
+```
+# Open the prompt and paste this command
+$ git clone https://github.com/Verdant31/alest-frontend.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+# Access the application folder
+$ cd alest-frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Install dependecies
+$ yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Start app
+$ yarn start
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+# Access the back-end project repository
+$ https://github.com/Verdant31/alest-backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+```
+
+# Open the prompt and paste this command
+$ git clone https://github.com/Verdant31/alest-backend
+
+# Install dependecies
+$ npm
+
+# Start app
+$ npm start
+```
+
+
+<p align="center">Feito por João Piovesan 📗</p>
